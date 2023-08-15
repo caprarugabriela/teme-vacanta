@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* adaugam variabile */
+:root {
+  --primary: #ff642e;
+  --gray01: #9b9999;
+  --gray02: #ececec;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+  background: #111000;
+}
+
+.test-nl-container {
+  width: 220px;
+}
+
+.nl-form {
+  background: #fff;
+  border-radius: 28px;
+  width: 100;
+  text-align: center;
+  padding: 45px 18px 30px 18px;
+  color: var(--gray01);
+}
+
+.nl-form h1 {
+  font-size: 18px;
+  color: #111000;
+  margin-bottom: 12px;
+}
+
+.nl form .copy {
+  font-size: 10px;
+  margin-bottom: 24px;
+}
+
+.nl-form button[type='submit'] {
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  background: var(--primary);
+  display: block;
+  width: 100%;
+  font-size: 10px;
+  padding: 10px 0;
+  border-radius: 6px;
+  margin-top: 26px;
+}
+
+.nl-form #consent {
+  display: none;
+}
+
+.nl-form label[for='consent'] {
+  color: #000;
+  font-size: 10px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nl-form label[for='consent'] .icon {
+  display: inline-flex;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  font-size: 4px;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+}
+
+.nl-form #consent:checked + label[for='consent'] .icon {
+  background: var(--primary);
+  color: #fff;
+}
+
+.form-row {
+  position: Relative;
+  margin-top: 16px;
+}
+
+.form-row input[type='text'],
+.form-row input[type='email'] {
+  border: 0;
+  border-bottom: 1px solid var(--gray02);
+  font-size: 10px;
+  padding: 4px 0;
+  width: 90%;
+  caret-color: var(--gray01);
+  color: var (--gray01);
+  padding-left: 5px;
+}
+
+.form-row input[type='text']:focus,
+.form-row input[type='email']:focus {
+  border-bottom: 1px solid var(--gray01);
+  outline: none;
+}
+
+.form-row input[type='text'] + label,
+.form-row input[type='email'] + label {
+  position: absolute;
+  font-size: 10px;
+  top: 6px;
+  left: 7%;
+  pointer-events: none;
+  transition: top 0.125s linear, font-size 0.125s linear;
+}
+
+.form-row input[type='text']:focus + label,
+.form-row input[type='email']:focus + label,
+.form-row input[type='text']:not(:placeholder-shown) + label,
+.form-row input[type='email']:not(:placeholder-shown) + label {
+  top: -2px;
+  font-size: 6px;
+}

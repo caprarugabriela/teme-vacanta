@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 80px 0;
+  background-color: #ccc;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.action-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #cbcbcb;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #454545;
+}
+
+.action-button .icon {
+  width: 65%;
+  height: 65%;
+}
+
+.button-primary {
+  background-color: #000;
+  color: #fff;
+  border: 0;
+  display: inline-block;
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 24px;
+}
+
+.button-svg {
+  background: none;
+  border: 0;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+.button-svg .icon {
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.card {
+  width: 100%;
+  background-color: #e8e8e8;
+  max-width: 390px;
+  box-shadow: 0px 10px 20px #bfbfbf;
+  border-radius: 20px;
+  padding: 20px 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.card > header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card .header-controls ul {
+  display: flex;
+  gap: 6px;
+}
+
+.card .hero {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.card .hero img {
+  width: 60%;
+}
+
+.card main .details {
+  text-align: center;
+  width: 60%;
+  margin: 24px auto;
+}
+
+.card main .details h1 {
+  margin-bottom: 16px;
+}
+
+.card main .details h2 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card main footer {
+  text-align: center;
+}
+
+#search {
+  width: 95%;
+  height: 36px;
+  margin: 0 auto;
+  border: 2px solid #dfdfdf;
+  border-radius: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px 0 8px;
+}
+
+#search input[name='search'] {
+  margin: 0 4px;
+  border: 0;
+  background: none;
+  flex-grow: 1;
+  padding: 0 8px;
+  width: 70%;
+}
+
+#search button[type='submit'] {
+  order: -1;
+  border: 0;
+  padding: 0;
+  background: none;
+  align-self: center;
+  display: block;
+  width: 14px;
+  height: 14px;
+  aspect-ratio: 1;
+}
+
+#search button[type='submit'] .icon {
+  width: 100%;
+  height: 100%;
+}
+
+#search button.action-button[type='button'] {
+  align-self: center;
+  flex-shrink: 0;
+  background: none;
+}
+
+.card .carousel {
+  margin-top: 24px;
+}
+
+.card .carousel > h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.card .carousel ul {
+  display: flex;
+  gap: 8.421052%;
+  overflow: auto;
+  padding-bottom: 16px;
+}
+
+.card .carousel ul li {
+  flex-shrink: 0;
+  width: 80%;
+}
+
+.card .carousel ul li header {
+  max-width: 100%;
+}
+
+.carousel-card .main {
+  border: 2px solid #d5d5d5;
+  border-radius: 16px;
+  background: rgb(213, 213, 213);
+  background: linear-gradient(90deg, #d5d5d5 0%, #e6e6e6 100%);
+  position: relative;
+  padding: 36px 16px;
+}
+
+.carousel-card .main .carousel-card-controls {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  gap: 2px;
+}
+
+.carousel-card header {
+  margin-top: 8px;
+}
+
+.carousel-card header h1 {
+  font-size: 14px;
+}
+
+.carousel-card header h2 {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.carousel-card picture {
+  width: 100%;
+  display: block;
+}
+
+.carousel-card picture img {
+  width: 100%;
+}
+
+.card .nav {
+  position: absolute;
+  background-color: #f0f0f0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  border-top: 1px solid #cecece;
+}
+
+.card .nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.card .nav ul .button-svg {
+  color: #979797;
+}
+
+.card .nav ul li.active .button-svg {
+  color: #000;
+}

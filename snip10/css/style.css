@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto sans';
+  font-size: 16px;
+  background: #f4f4fe;
+}
+
+.social-authentification {
+  box-shadow: 1px 2px 5px #d6d4d5;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.social-authentification h1 {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.social-authentification ul {
+  display: inline-flex;
+  gap: 32px;
+}
+
+.social-authentification .active button,
+.social-authentification button:hover {
+  color: #fff;
+  box-shadow: 0px 2px 2px #757577;
+  border-radius: 8px;
+}
+
+.social-authentification .active button img,
+.social-authentification button:hover img {
+  transform: scale(1.2);
+}
+
+.social-authentification button {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  padding: 20px;
+  transition: transform 0.2s linear, background-color 0.2s linear;
+}
+
+.social-authentification button img {
+  transition: transfor, 0.2s linear;
+}
